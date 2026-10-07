@@ -33,6 +33,11 @@ app.get("/" , (req,res)=>{
     })
 })
 
+app.get("/api/test" ,(req,res) =>{
+  res.json({mesaage:"test endpoint working"})
+});
+
+
 const PORT = process.env.PORT || 8080;
 
 app.listen(PORT, () => {
